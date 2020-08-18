@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jun 29 19:08:47 WAT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0173-0144-6608-0000042cd938 
+on database directory C:\Users\Connel\Documents\NetBeansProjects\HotelManagementSystem(IMT)\database with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/C:/Users/Connel/Documents/NetBeansProjects/HotelManagementSystem(IMT)/dist/run1829623153/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_221-b11
+user.dir=C:\Users\Connel\Documents\NetBeansProjects\HotelManagementSystem(IMT)
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

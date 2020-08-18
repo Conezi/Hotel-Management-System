@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.button{
+    -fx-background-color:#42424200;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #0288D1;
+}
+
+.addCat{
+    -fx-background-color:#007700;
+    -fx-text-fill: white;
+}
+
+.updateCat{
+    -fx-background-color:#000077;
+    -fx-text-fill: white;
+}
+
+.deleteCat{
+    -fx-background-color:#770000;
+    -fx-text-fill: white;
+}
