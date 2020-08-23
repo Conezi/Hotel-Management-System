@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.system.bookRoom.BookRoomController">
+    <stylesheets>
+        <URL value="@bookroom.css" />
+    </stylesheets>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="room_number" editable="false" labelFloat="true" promptText="Room Number">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="customer_name" labelFloat="true" layoutX="10.0" layoutY="20.0" promptText="Customer Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="customer_address" labelFloat="true" layoutX="10.0" layoutY="55.0" promptText="Customer Address">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="customer_mobile" labelFloat="true" layoutX="10.0" layoutY="90.0" promptText="Customer Mobile">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="customer_email" labelFloat="true" layoutX="10.0" layoutY="125.0" promptText="Customer Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="customer_category" labelFloat="true" prefHeight="25.0" prefWidth="1500.0" promptText="Customer Category">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="guests" labelFloat="true" layoutX="10.0" layoutY="200.0" promptText="Guests">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="check_in_date" prefHeight="25.0" prefWidth="1400.0" promptText="Check In Date">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXDatePicker fx:id="check_out_date" layoutX="10.0" layoutY="335.0" prefHeight="25.0" prefWidth="1400.0" promptText="Check Out Date">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXComboBox fx:id="bookin_type" labelFloat="true" layoutX="10.0" layoutY="245.0" prefHeight="25.0" prefWidth="1500.0" promptText="Bookin Type">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXComboBox>
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+   <bottom>
+      <HBox prefHeight="54.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="ok" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#handleOkAction" prefHeight="61.0" prefWidth="700.0" styleClass="bnt" text="OK" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="cancle" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#handleCancleAction" prefHeight="61.0" prefWidth="700.0" styleClass="bnt" text="CANCLE" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

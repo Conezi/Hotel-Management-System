@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.system.checkOut.CheckOutController">
+   <stylesheets>
+        <URL value="@checkout.css" />
+    </stylesheets>
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="14.0" layoutY="6.0" prefHeight="52.0" prefWidth="344.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Hotel Management System(IMT)" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="348.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextArea fx:id="invoice_area" editable="false" layoutY="-3.0" prefHeight="353.0" prefWidth="600.0" text="Invoice" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextArea>
+         </children></AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="44.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="407.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="check_out" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#handleCheckOutAction" prefHeight="61.0" prefWidth="700.0" styleClass="bnt" text="CHECK OUT" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="print" buttonType="RAISED" disable="true" layoutX="10.0" layoutY="10.0" onAction="#handlePrintAction" prefHeight="61.0" prefWidth="700.0" styleClass="bnt" text="PRINT" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+                  <JFXButton fx:id="cancle" buttonType="RAISED" layoutX="256.0" layoutY="15.0" onAction="#handleCancleAction" prefHeight="61.0" prefWidth="700.0" styleClass="bnt" text="CANCEL" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+         </children>
+      </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
